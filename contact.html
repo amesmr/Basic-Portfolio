@@ -7,16 +7,19 @@
 		<META NAME="Keywords" CONTENT="">
 		<META NAME="Description" CONTENT="">
 		<script language="javascript">
-		<!--
-		// TODO: add your java script functions here
-		// -->
+		<script>
+function myFunction() {
+    var x = document.getElementById("myTextarea").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
 		</script>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</HEAD>
 	<BODY>
 		<div class="container">
 			<div id="headerrow">
-				<div id="name">
+				<div id="myname">
 					Matthew Ames
 				</div>
 				<div id="quickLinks">
@@ -28,6 +31,15 @@
 			<div id="mainBody">
 				<section id="AboutBox">
 					<h2>Contact</h2>
+					<form action="action_page.php">
+							<label for="username">Name</label><br>
+							<input type="text" id="username" name="Your Name" value="John Doe"><br>
+							<label for="emailaddr">Email</label><br>
+							<input type="text" id="emailaddr" name="Your Email Address" value="you@email.com"><br>
+							<label for="msg">Message</label><br>
+							<textarea rows="30" type="text">"Some message..."</textarea><br>
+							<input type="submit" value="Submit">
+					</form>
 				</section>
 				<section id="Connect">
 					<h3>Connect With Me</h3>
