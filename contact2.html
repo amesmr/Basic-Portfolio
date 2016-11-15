@@ -6,11 +6,7 @@
         <META NAME="Author" CONTENT="Matthew Ames">
         <META NAME="Keywords" CONTENT="">
         <META NAME="Description" CONTENT="">
-        <script language="javascript">
-			<!--
-			// TODO: add your java script functions here
-			// -->
-</script>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </HEAD>
     <BODY>
@@ -28,22 +24,23 @@
             </div>
             <div id="mainBody">
                 <section id="AboutBox">
-                    <h2>About Me</h2>
-                    <img src="assets/images/image.jpg" title="Matthew Ames" Id="bio-pic">
-                    <p>
-                    My name is Matt Ames. I have been a programmer for about 17 years. I was in the Marine Corps from
-                    1988-1992. I have a degree in Biology from UNC that I recieved in 1995. FYI - The Biology degree
-                    that I received was broken. It never earned me a single dime.
-                    </p>
-                    <p>
-                    I have worked for the last 17 years as either a Controls Engineer or as an Embedded Firmware
-                    Engineer. As a Controls Engineer, I worked with the factory production equipment and also designed
-                    the GUIs (Graphic User Interface) that the Operators would use when they were working with the
-                    equipment. As an Embedded Firmware Engineer Iworked at a company that designed networking switches
-                    for supercomputers. The Firmware is essentially an operating system that is burned to memory on the
-                    switches. The last switch that I worked on there had a throughput of 1.56 TerraBits/second!
-
-                    </p>
+                    <h2>Contact</h2> 
+                    <form name="contactform" method="post" action="send_form_email.php">
+                        <label for="first_name">First Name *</label><br>
+                        <input type="text" name="first_name" maxlength="50" size="30"><br>
+                        <label for="last_name">Last Name *</label><br>
+                        <input type="text" name="last_name" maxlength="50" size="30"><br>
+                        <label for="email">Email Address *</label><br>
+                        <input type="text" name="email" maxlength="80" size="30"><br>
+                        <label for="telephone">Telephone Number</label><br>
+                        <input type="text" name="telephone" maxlength="30" size="30"><br>
+                        <label for="comments">Comments *</label><br>
+                        <textarea name="comments" maxlength="1000" cols="25" rows="6">
+                        </textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </form>
                 </section>
                 <section id="Connect">
                     <h3>Connect With Me</h3>
@@ -52,6 +49,8 @@
                         src="assets/images/linkedin_360.png" height="42" width="42"></a><a
                         href="http://stackoverflow.com/users/7066340/matt-ames"><img src="assets/images/stack_360.jpg"
                         height="42" width="42"></a>
+                    <p>This page successfully used the MAMP server on my localhost to handle the PHP
+                    script in this repository.</p>
                 </section>
             </div>
             <div id="foot">

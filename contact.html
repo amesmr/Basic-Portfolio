@@ -6,16 +6,8 @@
         <META NAME="Author" CONTENT="Matthew Ames">
         <META NAME="Keywords" CONTENT="">
         <META NAME="Description" CONTENT="">
-        <script language="javascript">
-			<script >
-				function myFunction() {
-				var x = document.getElementById("myTextarea").value;
-				document.getElementById("demo").innerHTML = x;
-				}
-			</script>
-        </script>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </HEAD>
     <BODY>
         <div class="container">
@@ -27,27 +19,25 @@
                     <a href="index.html">About</a>
                     <a href="portfolio.html">Portfolio</a>
                     <a href="contact.html">Contact</a>
+                    <a href="contact2.html">Contact(2)</a>
                 </div>
             </div>
             <div id="mainBody">
                 <section id="AboutBox">
                     <h2>Contact</h2>
-
-                    <form action="mailto:mattames@carolins.rr.com" method="post" enctype="text/plain">
-                        <label for="From">Name</label><br>
-                        <input type="text" id="From" name="From" value="Your Name Here"><br>
-                        <label for="To">Email</label><br>
-                        <input type="text" id="To" name="To" value="mattames@carolins.rr.com"><br>
-                        <label for="subject">Subject</label><br>
-                        <input type="text" id="subject" name="subject" value="Talking Points..."><br>
-                        <label for="body">Message</label><br>
-                        <textarea rows="30" type="text" id="body">
-                            "Some message..."
+                    <form onsubmit="prepareEmail(to, subject, bodyText)">
+                        <label for="to">Email Address *</label><br>
+                        <input type="text" name="to" maxlength="80" size="30" required><br>
+                        <label for="subject">Telephone Number</label><br>
+                        <input type="text" name="subject" maxlength="80" size="80" required><br>
+                        <label for="bodyText">Message *</label><br>
+                        <textarea name="bodyText" maxlength="1000" cols="25" rows="6" required>
                         </textarea>
                         <br>
                         <input type="submit" value="Submit">
                         <input type="reset" value="Reset">
                     </form>
+
                 </section>
                 <section id="Connect">
                     <h3>Connect With Me</h3>
@@ -57,11 +47,11 @@
                         href="http://stackoverflow.com/users/7066340/matt-ames"><img src="assets/images/stack_360.jpg"
                         height="42" width="42"></a>
                 </section>
-                </section>
             </div>
             <div id="foot">
                 copyright 2016 matthew ames
             </div>
         </div>
+        <script src="assets/js/PrepareEmail.js"></script>
     </BODY>
 </HTML>
