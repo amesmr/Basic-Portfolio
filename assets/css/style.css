@@ -1,17 +1,16 @@
 body {
-	color:#777777;
+	color: #777777;
 	margin: 0;
 	padding: 0;
 	background-color: #dddddd;
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 #headerrow {
-	width:100%;
-	height:80;
+	width: 100%;
+	height: 80;
 	background-color: white;
-	padding-top:;
 	padding-left: 50px;
-	margin:0;
+	margin: 0;
 	font-family: "Georgia", Times, Times New Roman, serif;
 }
 #quickLinks {
@@ -20,12 +19,12 @@ body {
 	padding-right: 100px;
 	text-align: center;
 	vertical-align: middle;
-	color:#777777;
+	color: #777777;
 	font-size: 18px;
 	text-align: center;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	height:55px;
-	padding-top:25px;
+	height: 55px;
+	padding-top: 25px;
 
 }
 #myname {
@@ -33,16 +32,16 @@ body {
 	background-color: #4aaaa5;
 	color: white;
 	text-align: center;
-	height:60;
+	height: 60;
 	font-size: 24px;
 	vertical-align: middle;
 	float: left;
 	font-family: 'Georgia', Times, "Times New Roman", serif;
-	padding-top:20px;
+	padding-top: 20px;
 
 }
-#aboutbox {
-	width:50%;
+#mainContentBox {
+	width: 50%;
 	padding-left: 25px;
 	padding-right: 25px;
 	background-color: white;
@@ -57,13 +56,13 @@ body {
 	background-color: white;
 	margin: 30px;
 }
-#aboutbox,#connect,
+#mainContentBox,#connect,
 #bio-pic {
 	float: left;
 }
 
 #mainBody {
-	width:100%;
+	width: 100%;
 	background-color: white;
 }
 #bio-pic {
@@ -74,11 +73,15 @@ body {
 h2, h3 {
 	font-family: 'Georgia', Times, "Times New Roman", serif;
 	text-align: left;
-    border-bottom-style: solid;
-    border-color: #777777;
-    border-bottom-width: thin;
     color: #4aaaa5;
-
+	margin-bottom: 10;
+	margin-top: 10;
+}
+h2{
+	font-size: 24px;
+}
+h3{
+	font-size: 18px;
 }
 #foot {
 	color: white;
@@ -96,7 +99,7 @@ h2, h3 {
 
 input[type=text] {
 	background-color: white;
-	color:black;
+	color: black;
 	width: 100%;
     display: inline-block;
     border: 1px solid #ccc;
@@ -112,6 +115,7 @@ input[type=reset] {
 	color: white;
     border: none;
     padding: 14px 20px;
+	font-size: 18px;
     margin: 8px 0;
     cursor: pointer;
 }
@@ -138,36 +142,35 @@ textarea{
     resize: none;
 }
 a:link, a:visited {
-
     text-decoration: none;
 }
 div.accomp {
-	height:180px;
-	width:220px;
-	margin:0;
-	padding:0;
-	border:0;
+	height: 180px;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	border: 0;
 	padding-bottom: 20px;
-	z-index:-1;
+	z-index: -1;
 }
 div.rightside {
-	float:right;
+	float: right;
 }
 div.leftside {
-	float:left;
+	float: left;
 }
 div.acompBanner {
 	width: 100%;
 	position: relative;
-	margin:0;
-	padding:0;
-	border:0;
-	top:-60px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	top: -60px;
 	background-color: #4aaaa5;
 	color: white;
 	text-align: center;
 	padding-top: 10px;
-	height:40;
+	height: 40;
 	font-size: 24px;
 	font-family: 'Georgia', Times, "Times New Roman", serif;
 }
