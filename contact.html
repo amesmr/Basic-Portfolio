@@ -26,10 +26,10 @@
                 <section id="mainContentBox">
                     <h2>Contact</h2>
                     <hr>
-                    <a id="sendMail">attempting to modify this link to send mail after submit</a>
+                    <a id="sendMail" href="#">attempting to modify this link to send mail after submit</a>
 
                     <!-- see comments in function for which browsers are supported -->
-                    <form onsubmit="myFunction(to, subject, bodyText)" method="post">
+                    <form method="post">
 
                     <!-- Below works in FireFox, IE, Edge, NOT Chrome!! -->
                     <!--<form onsubmit="prepareEmail(to, subject, bodyText)" method="post">-->
@@ -43,7 +43,7 @@ populate with spaces -->
 <textarea name="bodyText" maxlength="1000">
 </textarea>
                         <br>
-                        <input type="submit" value="Submit">
+                        <button class="setLink"  onclick="myFunction(to, subject, bodyText)">Submit</button>
                         <input type="reset" value="Reset">
                     </form>
                 </section>
@@ -62,5 +62,12 @@ populate with spaces -->
             </div>
         </div>
         <script src="assets/js/PrepareEmail.js"></script>
+        <script>
+          var form = document.querySelector("form");
+          form.addEventListener("submit", function(event) {
+            console.log("Saving value", form.elements.value);
+            event.preventDefault();
+          });
+</script>   
     </BODY>
 </HTML>

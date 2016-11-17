@@ -35,12 +35,12 @@ function myFunction(to, subject, bodyText) {
 //  // below works in FireFox, IE and Edge! NOT in Chrome or IE
 //  location.href = emaillink;
 //
-//  // below works in FireFox, IE and Edge! NOT in Chrome or IE
-//  setTimeout(function(emaillink){document.location.href = emaillink},500);
-//
+    // below works in FireFox, IE and Edge! NOT in Chrome or IE
+    //setTimeout(function(emaillink){document.location.href = emaillink},500);
+
     // below works in FireFox, Edge or IE! NOT in Chrome
     location.assign(emaillink);
-    return false;
+    return true;
 }
 
 

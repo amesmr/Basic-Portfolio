@@ -103,8 +103,17 @@ input[type=text] {
     margin: 2px 0;
     box-sizing: border-box;
 }
-input[type=submit],
 input[type=reset] {
+    width: 40%;
+    background-color: #4aaaa5;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+button.setLink {
     width: 40%;
     background-color: #4aaaa5;
     color: white;
@@ -117,9 +126,9 @@ input[type=reset] {
 input[type=reset] {
     float: right;
 }
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+/*input[type=submit]:hover {    */
+/*    background-color: #45a049;*/
+/*}                             */
 form {
     border-radius: 5px;
     background-color: #f2f2f2;
